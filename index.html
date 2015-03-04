@@ -69,11 +69,34 @@ Caracteristicas</h3>
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
+          <script src="zoomit.min.js"></script>
           <script type="text/javascript">
             try {
               var pageTracker = _gat._getTracker("UA-60303213-1");
             pageTracker._trackPageview();
             } catch(err) {}
+          </script>
+
+<canvas id="myCanvas"></canvas>
+          <script type="text/javascript">
+
+$z.create({
+    canvasId: 'myCanvas',
+    images: [
+      '1.jpg', '2.jpg'
+    ],
+    gridLineWidth: 1,
+    selectorFillStyle: 'rgba(12, 158, 255, 0.5)',
+    selectorStrokeStyle: 'rgba(12, 158, 255, 0.5)',
+    divisions: 5,
+    selectorLineWidth: 4,
+    callback: function($viewer) {
+      $z.o = $viewer;
+      $viewer.show();
+      $viewer.update();
+    }
+  });
+
           </script>
 
   </body>
