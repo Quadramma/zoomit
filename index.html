@@ -46,6 +46,28 @@ Caracteristicas</h3>
 </ul>
 
 
+<h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Ejemplo</h3>
+
+<p>Teclas WASD para moverse por las celdas, SPACE para zoomIn y 'O' para zoomOut.</p>
+
+<canvas id="myCanvas" style="margin:0 auto;"></canvas>
+
+<h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Note</h3>
+
+<p>I looking forward to hear about your oponion and how to improve this.</p>
+
+<h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Licencia</h3>
+
+<p>MIT</p>
+
+
+
         </section>
 
         <aside id="sidebar">
@@ -77,7 +99,7 @@ Caracteristicas</h3>
             } catch(err) {}
           </script>
 
-<canvas id="myCanvas"></canvas>
+
           <script type="text/javascript">
 
 $z.create({
@@ -96,6 +118,21 @@ $z.create({
       $viewer.update();
     }
   });
+
+
+snippet_evt_on(window, 'keydown', function(e){
+  var code = (e.keyCode ? e.keyCode : e.which);
+  
+    if(32){
+      e.preventDefault();
+    }
+
+    
+});
+ 
+
+
+
 
           </script>
 
